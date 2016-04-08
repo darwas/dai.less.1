@@ -10,11 +10,24 @@ namespace Dai.less._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test Darius");
+            //User Story "Addieren" : Als Benutzer moechte ich zwei Zahlen eingeben, um deren Summe berechnen zu lassen.
+            Console.Write("Bitte gibt den ersten Summanden ein: ");
+            string ersteSummand = Console.ReadLine();
+            Console.Write("Bitte gibt den zweiten Summanden ein: ");
+            string zweiteSummand = Console.ReadLine();
 
-            int zahl = 20;
+            // Wandel Text in die Gleikommazahlen
 
-            Console.WriteLine(zahl);
+            double ersteSumandAlsZahl = Convert.ToDouble(ersteSummand);
+            double zweiteSumandAlsZahl = Convert.ToDouble(zweiteSummand);
+
+            //Berechung ausfueren
+
+            double sume = ersteSumandAlsZahl + zweiteSumandAlsZahl;
+             
+            //Ausgabe
+
+            Console.WriteLine(sume);
             Console.ReadLine();
 
 
