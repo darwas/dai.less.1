@@ -27,11 +27,16 @@ namespace Dai.less._1
              
             //Ausgabe
 
-            Console.WriteLine(sume);
+            Console.WriteLine("Die Sume ist: " + sume);
+
+            WarteAufBenutzereingabe();
+
+
+
+        }
+        static void WarteAufBenutzereingabe()
+        {
             Console.ReadLine();
-
-
-
         }
     }
 }
